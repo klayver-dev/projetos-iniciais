@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* menu top (mobile) */
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-ab {
+    display: block;
+}
+
+.bars-menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* fim do menu top (mobile) */
+
+/* index */
+.container-main {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    margin-top: 7%;
+}
+
+.container-main .text {
+    width: 300px;
+    margin: 0px 150px 0px 0px;
+}
+
+.container-main img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.p1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.meu-nome {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkedin {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* fim do index */
+
+/* habilidades */
+.habilidades-pd {
+    padding-top: 93px;
+}
+
+.habilidades-pd h2 { 
+    text-align: center;
+    padding-bottom: 70px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #818181;
+}
+
+.skills-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 70px;
+}
+
+.conteiner-skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    max-width: 70%;
+}
+
+.skill-box {
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.conteiner-descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    width: 40%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* pagina sobre mim */
+.sobre-mim {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.sobre-center {
+    text-align: center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;    
+}
+
+.descriacao-sobre {
+    line-height: 35px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tech {
+    display: flex;
+    gap: 5px;
+}
+
+/* fim do sobre mim */
+
+/* inicio media query (mobile) */
+
+@media only screen and (min-width: 769px) { /* a cima de 768px */
+    .menu-top {
+        width: 500px;
+    }
+
+    .sobre-mim {
+        width: 80%;
+    }
+
+    .sobre-center {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 15px;
+    }
+
+    .descriacao-sobre {
+        font-size:18px;
+        padding: 0px 5px;
+    }
+
+    .text-final {
+        font-size: 19px;
+        padding-bottom: 15px;
+    }
+
+    .conteiner-descricao {
+        display: none;
+    }
+
+    .mysql {
+        width: 150px;
+    }
+
+    .conteiner-descricao {
+        display: block;
+    }
+
+    .container-main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) { /* a baixo de 500px */
+
+    .bars-menu {
+        display: block;
+    }
+
+    .container-main {
+        width: 100%;
+        display: block;
+        justify-content: space-between;
+        margin-top: 7%;
+        font-size: 5px;
+    }
+    
+    .container-main .text {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-main img {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    .p1 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .meu-nome {
+        font-size: 23px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .linkedin {
+        display: inline-block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-top: 5px;
+        padding: 10px;
+    }
+
+    /* pagina sobre mim */
+
+    .sobre-mim {
+        width: 95%;
+    }
+
+    .sobre-center {
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+
+    .descriacao-sobre {
+        font-size:18px;
+        padding: 0px 5px;
+    }
+
+    .text-final {
+        font-size: 19px;
+        padding-bottom: 10px;
+    }
+
+    .conteiner-descricao {
+        display: none;
+    }
+
+    .mysql {
+        width: 170px;
+    }
+
+    .card-project {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+.leading-relaxed {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 340px) { /* a baixo de 340px */
+
+    .user {
+        display: none;
+    }
+
+}
